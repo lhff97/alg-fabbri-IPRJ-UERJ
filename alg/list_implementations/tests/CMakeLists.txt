@@ -1,0 +1,2 @@
+add_executable(list_implementations-test test_list_implementations.cpp)
+target_link_libraries(list_implementations-test list_implementations gtest_main)
