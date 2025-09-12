@@ -1,4 +1,4 @@
-#include "char-sorter.h"
+#include "sort_char.h"
 #include <stdio.h>
 
 int
@@ -8,7 +8,7 @@ main(void)
 
   printf("Original string: %s\n", my_string);
 
-  sort_chars(my_string);
+  sort_char(my_string);
 
   printf("Sorted string:   %s\n", my_string);
 
