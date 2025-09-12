@@ -1,0 +1,2 @@
+add_executable(list_implementations-cmd main.c)
+target_link_libraries(list_implementations-cmd list_implementations)
