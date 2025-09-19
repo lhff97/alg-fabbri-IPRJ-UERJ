@@ -1,8 +1,7 @@
 #include "list_implementations.h"
 #include <stdio.h>
-#include <stdlib.h> // For malloc and free
+#include <stdlib.h>
 
-/* Singly Linked List Implementations */
 Node* createNode(int data) {
     Node *newNode = (Node*)malloc(sizeof(Node));
     if (newNode == NULL) {
@@ -35,7 +34,7 @@ void deleteSingly(Node **head, int data) {
         return;
     }
 
-    if (prev == NULL) { // Deleting head node
+    if (prev == NULL) {
         *head = current->next;
     } else {
         prev->next = current->next;
@@ -54,7 +53,6 @@ void printSingly(Node *head) {
     printf("NULL\n");
 }
 
-/* Doubly Linked List Implementations */
 DoublyNode* createDoublyNode(int data) {
     DoublyNode *newNode = (DoublyNode*)malloc(sizeof(DoublyNode));
     if (newNode == NULL) {
@@ -89,7 +87,7 @@ void deleteDoubly(DoublyNode **head, int data) {
         return;
     }
 
-    if (current->prev == NULL) { // Deleting head node
+    if (current->prev == NULL) {
         *head = current->next;
     } else {
         current->prev->next = current->next;
@@ -112,7 +110,6 @@ void printDoubly(DoublyNode *head) {
     printf("NULL\n");
 }
 
-/* Circular Buffer Implementations */
 CircularBuffer* createCircularBuffer(int size) {
     CircularBuffer *cb = (CircularBuffer*)malloc(sizeof(CircularBuffer));
     if (cb == NULL) {
