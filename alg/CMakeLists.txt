@@ -1,4 +1,7 @@
 add_subdirectory(merge)
 add_subdirectory(sort_char)
 add_subdirectory(list_implementations)
+add_subdirectory(graph)
+add_subdirectory(big_string)
+add_subdirectory(binary_search)
 #add_subdirectory(list)
